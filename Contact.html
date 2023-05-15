@@ -1,4 +1,7 @@
 <html>
+  <body style="background-image: url('forest-bathing.webp'); background-size: cover; background-position: center,center">
+    
+  
     <style>
         nav {background-color: #012269; text-align: center; }
         nav h2{display: inline;padding: 100px;}
@@ -22,19 +25,19 @@
           background-color: transparent;}
     </style>
     <style>
-      main a:link {
+      article a:link {
         color: #79be20;
         background-color: transparent;
         text-decoration: none;}
-        main a:visited {
+      article a:visited {
         color: a#79be20;
         background-color: transparent;
         text-decoration: none;}
-        main a:hover {
+      article a:hover {
         color: #012269;
         background-color: transparent;
         text-shadow: 3px 2px 3px black;}
-        main a:active {
+      article a:active {
         color: #012c88;
         background-color: transparent;}
   </style>
@@ -47,14 +50,22 @@
         <h2><a  href="Contact.html">Contact Me!</a></h2>
    </nav>
 </Header>
-<main>
-<h2><i>Contacts</i></h2>
-    <a href="adamdirker@gmail.com" target="_blank"><b>My Email</b></a>
-    <a href="https://github.com/adirker87" target="_blank"><b>My GitHub</b></a>
+<main >
+<style>
+  main {text-shadow: 1px 1px 1px black; position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-100px;
+    margin-top:-160px;}
 
+</style>
+<article style="text-shadow: 3px 1px 1px black; display: inline; padding: 10px;">
+    <a href="adamdirker@gmail.com" target="_blank" style="font-size: 30;"><b>My Email</b></a>
+    <a href="https://github.com/adirker87" target="_blank" style="font-size: 30;"><b>My GitHub</b></a>
+</article>
 
-<div class="section">
-        <h1><span>Contact Me</span></h1>
+<div class="section" style="text-shadow: 1px 1px 1px black;background-color: rgba(255,255,255,0.5)">
+        <h1 style="text-shadow: 1px 1px 1px white;background-color: rgba(255,255,255,0.5)"><span>Contact Me</span></h1>
         <form>
             <select id="type">
                 <option>General</option>
@@ -66,7 +77,7 @@
             <input placeholder="Mary Sue" id="name" type="text" /><br><br>
             <label for="email">Email: </label>
             <input placeholder="name@domin.com" id="email" type="email" /><br><br>
-            <label for="message">Comment: </label>
+            <label for="message" >Comment: </label>
             <textarea placeholder="Tell me what you think of my site!" id="message" ></textarea>
             <br>
             <input type="submit" value="SEND" class="submit" />
@@ -74,4 +85,5 @@
         </form>
   </div>
   </main>
+</body>
   </html>

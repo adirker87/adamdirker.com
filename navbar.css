@@ -12,12 +12,13 @@ nav{
 }
 .sidebar{
     position: fixed;
+    text-shadow: 2px 2px #2e323d;
     top: 0;
     left: 0;
     height:100%;
     width: 240px;
     background: #2e323d;
-    padding: 6px 14px
+    padding: 22px 14px
 }
 .sidebar .logo_content .logo{
     color: aliceblue;
@@ -53,10 +54,9 @@ nav{
     position: relative;
     height: 50px;
     width: 100%;
-    margin: 0 5px;
+    margin: 0px 5px;
     list-style: none;
-    line-height: 50px;
-    
+    line-height: 50px; 
 }
 .sidebar ul li a{
     color: aliceblue;
@@ -69,6 +69,7 @@ nav{
 .sidebar ul li a:hover{
     color:#2e323d;
     background: aliceblue;
+    text-shadow: none;
 }
 .sidebar ul li a i{
     height: 50px;
@@ -76,4 +77,33 @@ nav{
     border-radius: 12px;
     line-height: 50px;
     text-align: center;
+}
+.sidebar .profile_content{
+    position: absolute;
+    color: aliceblue;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.sidebar .profile_content .profile{
+    position: relative;
+    height: 90px;
+    /* background: #1d1b31; */
+}
+.profile_content .profile .profile_details{
+    display: flex;
+    align-items: center;
+}
+.profile .profile_details img{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.profile .profile_details .name{
+    font-size: 15px;
+    font-weight: 400;
+}
+.profile .profile_details .job{
+    font-size: 12px;
 }

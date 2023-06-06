@@ -2,3 +2,11 @@ iframe, img {display: inline;margin: 0px 25px;border: solid rgb(153, 151, 151); 
 div img{border: solid black; border-radius: 25px;}
 main h2{font-size: 25; text-shadow: 3px 2px 3px white}
 footer{position: absolute; bottom: 0; }
+input[type='button'] {
+    background-color: rgb(75, 148, 75);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+}

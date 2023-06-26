@@ -1,7 +1,21 @@
-iframe, img {display: inline;margin: 0px 25px;border: solid rgb(153, 151, 151); border-radius: 10px;}
-div img{border: solid black; border-radius: 25px;}
-main h2{font-size: 25; text-shadow: 3px 2px 3px white}
-footer{position: absolute; bottom: 0; }
+iframe, img {
+    display: inline;
+    margin: 0px 25px;
+    border: solid rgb(153, 151, 151); 
+    border-radius: 10px;
+}
+div img{
+    border: solid black; 
+    border-radius: 25px;
+}
+main h2{
+    font-size: 25; 
+    text-shadow: 3px 2px 3px white
+}
+footer{
+    position: absolute; 
+    bottom: 0; 
+}
 input[type='button'] {
     background-color: rgb(75, 148, 75);
     border: none;
@@ -9,4 +23,45 @@ input[type='button'] {
     padding: 10px 20px;
     font-weight: bold;
     color: white;
+}
+.vl {
+    border-left: 10px solid aliceblue;
+    height: 800;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 200;
+}
+.expcard{
+    left: 50%;
+    background-color: aliceblue;
+    display: inline;
+    list-style-type: none;
+    margin:10px auto;
+    border: 2px solid black
+}
+.expcard summary{
+    font-size: 40px;
+    list-style-type: none;
+}
+.expcard .expcardRight{
+    float:right; 
+    margin-right: 150px; 
+    margin-top: 80px;
+}
+#cssfade {
+    width: 100px;
+    height: 100px;
+    background-image: url(AdTalem_logo_RGB_051617.jpg);
+    background-size: 100px 100px;
+
+}
+  #cssfade img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    transition: 1s ease;
+}
+  #cssfade:hover img {
+    opacity: 0;
 }

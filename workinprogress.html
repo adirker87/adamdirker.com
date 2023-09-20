@@ -1,0 +1,67 @@
+<html>
+   <head>
+    
+        <meta charset="UTF-8">
+     
+        <link rel="stylesheet" href="navbar.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+      <title>UAT Intake Form</title>
+   </head>
+
+<body>  
+
+    <table style="background-color: lightskyblue"; align=""; border="5">
+        <tr><th colspan="8">UAT Intake Form</th></tr>
+       <tr>
+            <th>Request Type</th>
+            <th>Tester</th>
+            <th>Project Name</th>
+            <th>Description</th>
+            <th>Test Steps</th>
+            <th>Expected Result</th>
+            <th>Status</th>
+            <th> Additional Notes</th>
+
+    </tr>
+    <th>
+        <select>
+            <option>General</option>
+            <option>Process Inprovement</option>
+            <option>Salesforce</option>
+            <option>Other</option>
+        </select>           
+    </th>
+    <th>
+        <input placeholder="Mary Sue" type="text">
+    </th>
+    <th>
+        <input placeholder="Project Name" type="text">
+    </th>
+    <th>
+        <textarea placeholder="Description"></textarea>
+    </th>
+    <th>
+        <textarea placeholder="Step 1:... Step 2:..."></textarea>
+    </th>
+    <th>
+        <textarea placeholder="Expected Result"></textarea>
+    </th>
+    <th>
+        <select>
+            <option>Not Run</option>
+            <option>In Progress</option>
+            <option>Pass</option>
+            <option>Fail</option>
+        </select>           
+    </th>
+    <th>
+        <textarea placeholder="Additional Notes"></textarea>
+    </th>
+</body>
+
+<input type="button" value="SEND" class="Send" />
+<input type="button" value="Reset">
+
+</html>

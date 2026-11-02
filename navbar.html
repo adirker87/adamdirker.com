@@ -1,27 +1,18 @@
 <html>
     <head>
-        <meta charset="UTF-8">
-        <title>Responsive Sidebar</title>
-        <link rel="stylesheet" href="navbar.css">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+        <title>Nav Bar</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="navbar.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 
     <nav>
         <div class="sidebar">
             <div class="logo_content">
-                <!-- <div class="logo">
-                    <i class='bx bx-face'></i>
-                    <div class="logo_name">Adam Dirker</div>
-                </div> -->
                 <i class='bx bx-menu' id="btn"></i>
             </div>    
             <ul class="nav_list">
-                <!--<li>
-                     <i class='bx bx-search-alt-2' ></i>
-                    <input type="text" placeholder="Search">
-                    <span class="tooltip">Dashboard</span> 
-                </li>-->
                 <li>
                     <a href="index.html">
                         <i class='bx bxs-home' ></i>
@@ -62,11 +53,11 @@
                         <i class='bx bx-error'></i>
                         <span class="links_name">Work in Progress</span>
                     </a>
-                    <span class="tooltip">Work in Progress</span>
+                    <span class="tooltip">WIP</span>
                 </li>
             </ul>
-        <div class="profile_content">
-        <div class="profile">
+            <div class="profile_content">
+            <div class="profile">
 
         <!-- Logo links to About Me page -->
         <a href="AboutMe.html" class="profile_logo">
@@ -75,15 +66,29 @@
         </a>
 
         <!-- Profile information appears when expanded -->
-        <div class="profile_details">
-            <div class="name_job">
-                <div class="name">Adam Dirker</div>
-                <div class="job">Instructional Designer</div>
+            <div class="profile_details">
+                <div class="name_job">
+                    <div class="name">Adam Dirker</div>
+                    <div class="job">Business Systems Professional</div>
+                </div>
             </div>
-        </div>
-
             </div>
             </div>
         </div>
     </nav>
+    </head>
+
+<script>
+    let btn = document.querySelector("#btn"); 
+    let sidebar = document.querySelector(".sidebar"); 
+    let search = document.querySelector(".bx-search"); 
+    
+    btn.onclick = function() {
+        sidebar.classList.toggle("active");
+    }
+    Searchbtn.onclick = function() {
+        sidebar.classList.toggle("active");
+    }
+ </script>   
+    
 </html>

@@ -1,13 +1,13 @@
 <html>
    <head>
     
-        <meta charset="UTF-8">
-     
-        <link rel="stylesheet" href="navbar.css">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="navbar.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
     
-      <title>UAT Intake Form</title>
+      <title>Work in Progress</title>
    </head>
 
 <body>  
@@ -58,10 +58,92 @@
     </th>
     <th>
         <textarea placeholder="Additional Notes"></textarea>
-    </th>
-</body>
+    </th><nav>
+        <div class="sidebar">
+            <div class="logo_content">
+                <i class='bx bx-menu' id="btn"></i>
+            </div>    
+            <ul class="nav_list">
+                <li>
+                    <a href="index.html">
+                        <i class='bx bxs-home' ></i>
+                        <span class="links_name">Home</span>
+                    </a>
+                    <span class="tooltip">Home</span>
+                </li>
+                <li>
+                    <a href="Professional.html">
+                        <i class='bx bx-briefcase'></i>
+                        <span class="links_name">Professional</span>
+                    </a>
+                    <span class="tooltip">Professional</span>
+                </li>
+                <li>
+                    <a href="Academic.html">
+                        <i class='bx bxs-graduation'></i>
+                        <span class="links_name">Academic</span>
+                    </a>
+                    <span class="tooltip">Academic</span>
+                </li>
+                <li>
+                    <a href="AboutSite.html">
+                        <i class='bx bx-notepad' ></i>
+                        <span class="links_name">About Site</span>
+                    </a>
+                    <span class="tooltip">About Site</span>
+                </li>
+                <li>
+                    <a href="Contact.html">
+                        <i class='bx bxs-contact' ></i>
+                        <span class="links_name">Contact</span>
+                    </a>
+                    <span class="tooltip">Contact</span>
+                </li>
+                <li>
+                    <a href="workinprogress.html">
+                        <i class='bx bx-error'></i>
+                        <span class="links_name">Work in Progress</span>
+                    </a>
+                    <span class="tooltip">WIP</span>
+                </li>
+            </ul>
+            <div class="profile_content">
+            <div class="profile">
 
+        <!-- Logo links to About Me page -->
+        <a href="AboutMe.html" class="profile_logo">
+            <img src="Website%20Pictures/AD%20Logo.jpg"
+                 alt="Adam Dirker Logo">
+        </a>
+
+        <!-- Profile information appears when expanded -->
+            <div class="profile_details">
+                <div class="name_job">
+                    <div class="name">Adam Dirker</div>
+                    <div class="job">Business Systems Professional</div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    </nav>
+    
+
+   
+</body>
 <input type="button" value="SEND" class="Send" />
 <input type="button" value="Reset">
 
+<script>
+    let btn = document.querySelector("#btn"); 
+    let sidebar = document.querySelector(".sidebar"); 
+    let search = document.querySelector(".bx-search"); 
+    
+    btn.onclick = function() {
+        sidebar.classList.toggle("active");
+    }
+    Searchbtn.onclick = function() {
+        sidebar.classList.toggle("active");
+    }
+ </script>    
 </html>
